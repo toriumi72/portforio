@@ -68,3 +68,11 @@
         top: 97%;
     }
 }
+@media (max-width: 959px) {
+    .swiper-pagination {
+        display: none;
+    }
+    .slider2 {
+        padding-bottom: 0px;
+    }
+}

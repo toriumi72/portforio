@@ -1,5 +1,5 @@
 .up {
-    transform: translateY(50px) !important;
+    transform: translateY(80px) !important;
     opacity: 0;
     &.is-active {
         transition: all 1s;
@@ -8,7 +8,7 @@
     }
 }
 .down {
-    transform: translateY(50px) !important;
+    transform: translateY(-80px) !important;
     opacity: 0;
     &.is-active {
         transition: all 1s;
@@ -17,46 +17,134 @@
     }
 }
 .left {
-
-}
-.right {
-
-}
-// ttl ver
-.up_ttl {
-    transform: translate(-25px,80px) !important;
+    transform: translateX(-80px) !important;
     opacity: 0;
     &.is-active {
         transition: all 1s;
-        transform: translate(-25px,0px) !important;
+        transform: translateY(0px) !important;
+        opacity: 1;
+    }
+}
+.right {
+    transform: translateX(80px) !important;
+    opacity: 0;
+    &.is-active {
+        transition: all 1s;
+        transform: translateY(0px) !important;
+        opacity: 1;
+    }
+}
+.opacity {
+    opacity: 0;
+    &.is-active {
+        transition: all 1s;
+        opacity: 1;
+    }
+}
+.right-asiato {  
+    opacity: 0;
+    transform: translate(-50px,100px);
+    &.is-active {
+        transition: all 5s;
+        transform: translate(20px,-60px);
+        opacity: 1;
+    }
+}
+.left-asiato {
+    transform: translate(50px,300px);
+    opacity: 0;
+    &.is-active {
+        transition: all 5s;
+        transform: translate(0px,160px);
+        opacity: 1;
+    }
+}
+@media (max-width: 959px) {
+    .right-asiato {  
+        opacity: 0;
+        transform: translate(-50px,0px);
+        &.is-active {
+            transition: all 5s;
+            transform: translate(50px,-30px);
+            opacity: 1;
+        }
+    }
+    .left-asiato {
+        transform: translate(100px,200px);
+        opacity: 0;
+        &.is-active {
+            transition: all 5s;
+            transform: translate(0px,150px);
+            opacity: 1;
+        }
+    }
+}
+@media (max-width: 599px) {
+    .right-asiato {  
+        opacity: 0;
+        transform: translate(-50px,100px);
+        &.is-active {
+            transition: all 5s;
+            transform: translate(30px,-10px);
+            opacity: 1;
+        }
+    }
+    .left-asiato {
+        transform: translate(100px,200px);
+        opacity: 0;
+        &.is-active {
+            transition: all 5s;
+            transform: translate(0px,100px);
+            opacity: 1;
+        }
+    }
+}
+@media (max-width: 479px) {
+    .right-asiato {  
+        opacity: 0;
+        transform: translate(-50px,100px);
+        &.is-active {
+            transition: all 5s;
+            transform: translate(20px,10px);
+            opacity: 1;
+        }
+    }
+}
+// ttl ver
+.up_ttl {
+    transform: translate(-30px,80px) !important;
+    opacity: 0;
+    &.is-active {
+        transition: all 1s;
+        transform: translate(-30px,0px) !important;
         opacity: 1;
     }
 }
 .down_ttl {
-    transform: translate(-25px,-80px) !important;
+    transform: translate(-30px,-80px) !important;
     opacity: 0;
     &.is-active {
         transition: all 1s;
         transform-origin: center center;
-        transform: translate(-25px,0px) !important;
+        transform: translate(-30px,0px) !important;
         opacity: 1;
     }
 }
 .left_ttl {
-    transform: translate(-105px,50px) !important;
+    transform: translate(-110px,50px) !important;
     opacity: 0;
     &.is-active {
         transition: all 1s;
-        transform: translate(-25px,0) !important;
+        transform: translate(-30px,0) !important;
         opacity: 1;
     }
 }
 .right_ttl {
-    transform: translate(55px, 50) !important;
+    transform: translate(60px, 50px) !important;
     opacity: 0;
     &.is-active {
         transition: all 1s;
-        transform: translate(-25px,0) !important;
+        transform: translate(-30px,0) !important;
         opacity: 1;
     }
 }

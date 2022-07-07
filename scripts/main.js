@@ -8,7 +8,6 @@
 
   setFillHeight(); 
 
-
   // loading
 window.onload = function() {
   const spinner = document.getElementById('loading');
@@ -114,9 +113,17 @@ const targetArray = Array.prototype.slice.call(target);
 //オプション設定!
 const options = {
     root: null,
-    rootMargin: '-200px 0px',
+    rootMargin: '0% 0%',
     threshold: 0
 };
+window.addEventListener('scroll', () => {
+  const options = {
+    root: null,
+    rootMargin: '20% 0%',
+    threshold: 0
+  };
+})
+
 
 const observer = new IntersectionObserver(callback, options)
 targetArray.forEach((tgt) => {

@@ -198,7 +198,6 @@ body {
 .el_img {
     position: absolute;
     right: -80px;
-    transform: translateY(-25%);
     & > img {
         width: 70%;
     }
@@ -210,7 +209,6 @@ body {
     .el_img {
         position: absolute;
         right: -120px;
-        transform: translateY(-18%);
         & > img {
             width: 53%;
         }
@@ -224,7 +222,6 @@ body {
     .el_img {
         position: absolute;
         right: -160px;
-        transform: translateY(-6%);
         & > img {
             width: 40%;
         }
@@ -234,7 +231,6 @@ body {
     .el_img {
         position: absolute;
         right: -200px;
-        transform: translateY(8%);
         & > img {
             width: 30%;
         }
@@ -375,7 +371,6 @@ body {
     position: absolute;
     bottom: 0;
     left: -50px;
-    transform: translateY(80%);
     & > img {
         width: 23%;
     }
@@ -390,6 +385,7 @@ body {
         &_li {
             flex-direction: column;
             align-items: center;
+            transform: translateX(5%);
             &_img {
                 width: 60%;
                 height: 100%;
@@ -446,7 +442,6 @@ body {
         position: absolute;
         bottom: 0;
         left: -50px;
-        transform: translateY(88%);
         & > img {
             width: 23%;
         }
@@ -455,6 +450,7 @@ body {
 @media (max-width: 599px) {
     .bl_about {
         &_li {
+            transform: translateX(6%);
             &_box {
 
                 &_sns {
@@ -484,18 +480,19 @@ body {
         position: absolute;
         bottom: 0;
         left: -30px;
-        transform: translateY(98%);
         & > img {
             width: 23%;
         }
     }
 }
 @media (max-width: 479px) {
+    .bl_about_li {
+        transform: translateX(8%);
+    }
     .hp_img {
         position: absolute;
         bottom: 0;
         left: -20px;
-        transform: translateY(110%);
         & > img {
             width: 20%;
         }

@@ -1,6 +1,6 @@
 .up {
-  -webkit-transform: translateY(50px) !important;
-          transform: translateY(50px) !important;
+  -webkit-transform: translateY(80px) !important;
+          transform: translateY(80px) !important;
   opacity: 0;
 }
 
@@ -13,8 +13,8 @@
 }
 
 .down {
-  -webkit-transform: translateY(50px) !important;
-          transform: translateY(50px) !important;
+  -webkit-transform: translateY(-80px) !important;
+          transform: translateY(-80px) !important;
   opacity: 0;
 }
 
@@ -26,23 +26,158 @@
   opacity: 1;
 }
 
+.left {
+  -webkit-transform: translateX(-80px) !important;
+          transform: translateX(-80px) !important;
+  opacity: 0;
+}
+
+.left.is-active {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateY(0px) !important;
+          transform: translateY(0px) !important;
+  opacity: 1;
+}
+
+.right {
+  -webkit-transform: translateX(80px) !important;
+          transform: translateX(80px) !important;
+  opacity: 0;
+}
+
+.right.is-active {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateY(0px) !important;
+          transform: translateY(0px) !important;
+  opacity: 1;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.opacity.is-active {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  opacity: 1;
+}
+
+.right-asiato {
+  opacity: 0;
+  -webkit-transform: translate(-50px, 100px);
+          transform: translate(-50px, 100px);
+}
+
+.right-asiato.is-active {
+  -webkit-transition: all 5s;
+  transition: all 5s;
+  -webkit-transform: translate(20px, -60px);
+          transform: translate(20px, -60px);
+  opacity: 1;
+}
+
+.left-asiato {
+  -webkit-transform: translate(50px, 300px);
+          transform: translate(50px, 300px);
+  opacity: 0;
+}
+
+.left-asiato.is-active {
+  -webkit-transition: all 5s;
+  transition: all 5s;
+  -webkit-transform: translate(0px, 160px);
+          transform: translate(0px, 160px);
+  opacity: 1;
+}
+
+@media (max-width: 959px) {
+  .right-asiato {
+    opacity: 0;
+    -webkit-transform: translate(-50px, 0px);
+            transform: translate(-50px, 0px);
+  }
+  .right-asiato.is-active {
+    -webkit-transition: all 5s;
+    transition: all 5s;
+    -webkit-transform: translate(50px, -30px);
+            transform: translate(50px, -30px);
+    opacity: 1;
+  }
+  .left-asiato {
+    -webkit-transform: translate(100px, 200px);
+            transform: translate(100px, 200px);
+    opacity: 0;
+  }
+  .left-asiato.is-active {
+    -webkit-transition: all 5s;
+    transition: all 5s;
+    -webkit-transform: translate(0px, 150px);
+            transform: translate(0px, 150px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 599px) {
+  .right-asiato {
+    opacity: 0;
+    -webkit-transform: translate(-50px, 100px);
+            transform: translate(-50px, 100px);
+  }
+  .right-asiato.is-active {
+    -webkit-transition: all 5s;
+    transition: all 5s;
+    -webkit-transform: translate(30px, -10px);
+            transform: translate(30px, -10px);
+    opacity: 1;
+  }
+  .left-asiato {
+    -webkit-transform: translate(100px, 200px);
+            transform: translate(100px, 200px);
+    opacity: 0;
+  }
+  .left-asiato.is-active {
+    -webkit-transition: all 5s;
+    transition: all 5s;
+    -webkit-transform: translate(0px, 100px);
+            transform: translate(0px, 100px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 479px) {
+  .right-asiato {
+    opacity: 0;
+    -webkit-transform: translate(-50px, 100px);
+            transform: translate(-50px, 100px);
+  }
+  .right-asiato.is-active {
+    -webkit-transition: all 5s;
+    transition: all 5s;
+    -webkit-transform: translate(20px, 10px);
+            transform: translate(20px, 10px);
+    opacity: 1;
+  }
+}
+
 .up_ttl {
-  -webkit-transform: translate(-25px, 80px) !important;
-          transform: translate(-25px, 80px) !important;
+  -webkit-transform: translate(-30px, 80px) !important;
+          transform: translate(-30px, 80px) !important;
   opacity: 0;
 }
 
 .up_ttl.is-active {
   -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-transform: translate(-25px, 0px) !important;
-          transform: translate(-25px, 0px) !important;
+  -webkit-transform: translate(-30px, 0px) !important;
+          transform: translate(-30px, 0px) !important;
   opacity: 1;
 }
 
 .down_ttl {
-  -webkit-transform: translate(-25px, -80px) !important;
-          transform: translate(-25px, -80px) !important;
+  -webkit-transform: translate(-30px, -80px) !important;
+          transform: translate(-30px, -80px) !important;
   opacity: 0;
 }
 
@@ -51,36 +186,36 @@
   transition: all 1s;
   -webkit-transform-origin: center center;
           transform-origin: center center;
-  -webkit-transform: translate(-25px, 0px) !important;
-          transform: translate(-25px, 0px) !important;
+  -webkit-transform: translate(-30px, 0px) !important;
+          transform: translate(-30px, 0px) !important;
   opacity: 1;
 }
 
 .left_ttl {
-  -webkit-transform: translate(-105px, 50px) !important;
-          transform: translate(-105px, 50px) !important;
+  -webkit-transform: translate(-110px, 50px) !important;
+          transform: translate(-110px, 50px) !important;
   opacity: 0;
 }
 
 .left_ttl.is-active {
   -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-transform: translate(-25px, 0) !important;
-          transform: translate(-25px, 0) !important;
+  -webkit-transform: translate(-30px, 0) !important;
+          transform: translate(-30px, 0) !important;
   opacity: 1;
 }
 
 .right_ttl {
-  -webkit-transform: translate(55px, 50) !important;
-          transform: translate(55px, 50) !important;
+  -webkit-transform: translate(60px, 50px) !important;
+          transform: translate(60px, 50px) !important;
   opacity: 0;
 }
 
 .right_ttl.is-active {
   -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-transform: translate(-25px, 0) !important;
-          transform: translate(-25px, 0) !important;
+  -webkit-transform: translate(-30px, 0) !important;
+          transform: translate(-30px, 0) !important;
   opacity: 1;
 }
 /*# sourceMappingURL=observer.css.map */
