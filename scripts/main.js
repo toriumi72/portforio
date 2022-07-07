@@ -111,7 +111,7 @@ topButton.onclick = function(){
 const target = document.querySelectorAll('.target')
 const targetArray = Array.prototype.slice.call(target);
 
-//オプション設定
+//オプション設定!
 const options = {
     root: null,
     rootMargin: '-200px 0px',
