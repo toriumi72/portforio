@@ -1,0 +1,70 @@
+// fv
+@keyframes zoomUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+.ly_fv .swiper .swiper-slide-active .slide-img,
+.ly_fv .swiper .swiper-slide-duplicate-active .slide-img,
+.ly_fv .swiper .swiper-slide-prev .slide-img {
+  animation: zoomUp 10s linear 0s 1 normal both;
+}
+// works 
+.slider2 {
+    padding-bottom: 120px;
+}
+.swiper-pagination {
+    top: 85%;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 15px;
+}
+.swiper-pagination-bullet {
+    background-color: transparent;
+    background-image: url(/images/logoB.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: unset;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3; 
+  }
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    animation: zoomUp_page 0.3s linear 0s 1 normal both;
+}
+.swiper-button-prev,.swiper-button-next {
+    top: 35%;
+    color: #333;
+}
+@keyframes zoomUp_page {
+    0% {
+        transform: translateY(30%) scale(1);
+    }
+    50% {
+        transform: scale(1.8);
+    }
+    100% {
+        transform: translateY(3%) scale(1.5);
+    }
+}
+@keyframes kf_rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 959px) {
+    .slider2 {
+        padding-bottom: 60px;
+    }
+    .swiper-pagination {
+        top: 97%;
+    }
+}

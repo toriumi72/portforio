@@ -1,0 +1,39 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  background: #fff;
+  font-size: 1.6rem;
+}
+
+#wrapper {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/*# sourceMappingURL=default.css.map */

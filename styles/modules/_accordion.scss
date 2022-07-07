@@ -1,0 +1,51 @@
+.bl_price_item_money {
+    &_ttl {
+        padding: 20px 0;
+        position: relative;
+        padding-right: 50px;
+        &::before {
+            content: "";
+            display: block;
+            background-color: #333;
+            position: absolute;
+            top: 50%;
+            width: 25px;
+            height: 3px;
+            right: 25px;
+            transition-duration: 0.2s;
+        }
+        &::after {
+            content: "";
+            display: block;
+            background-color: #333;
+            position: absolute;
+            top: 50%;
+            width: 25px;
+            height: 3px;
+            right: 25px;
+            transform: rotate(90deg);
+            transition-duration: 0.3s;
+        }
+        &.is-active {
+            &::before {
+                opacity: 0;
+            }
+            &::after {
+                transform: rotate(0);
+            }
+        }
+    }
+    &_text {
+        padding: 0px 20px;
+        background-color: #F8F8F8;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition-duration: 0.3s;
+        &.is-active {
+            padding: 25px 20px;
+            height: auto;
+            opacity: 1;
+        }
+    }
+}

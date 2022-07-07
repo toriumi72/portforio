@@ -1,0 +1,44 @@
+.bl_tab {
+    &_menu {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-bottom: 40px;
+        justify-content: center;
+        font-size: 3.2rem;
+    }
+}
+.bl_tab_trigger {
+    opacity: 0.4;
+    cursor: pointer;
+}
+.bl_tab_trigger.is_active {
+    opacity: 1;
+    text-decoration: underline;
+}
+.bl_tab_content_item {
+    display: none;
+}
+.bl_tab_content_item.is_active {
+    display: block;
+    animation: key-tab 1s linear 0s 1 normal both;
+}
+@keyframes key-tab {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media (max-width: 599px) {
+    .bl_tab {
+        &_menu {
+            font-size: 2.4rem;
+            gap: 10px;
+        }
+    }
+}

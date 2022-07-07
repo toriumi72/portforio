@@ -1,0 +1,86 @@
+.up {
+  -webkit-transform: translateY(50px) !important;
+          transform: translateY(50px) !important;
+  opacity: 0;
+}
+
+.up.is-active {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateY(0px) !important;
+          transform: translateY(0px) !important;
+  opacity: 1;
+}
+
+.down {
+  -webkit-transform: translateY(50px) !important;
+          transform: translateY(50px) !important;
+  opacity: 0;
+}
+
+.down.is-active {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateY(0px) !important;
+          transform: translateY(0px) !important;
+  opacity: 1;
+}
+
+.up_ttl {
+  -webkit-transform: translate(-25px, 80px) !important;
+          transform: translate(-25px, 80px) !important;
+  opacity: 0;
+}
+
+.up_ttl.is-active {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translate(-25px, 0px) !important;
+          transform: translate(-25px, 0px) !important;
+  opacity: 1;
+}
+
+.down_ttl {
+  -webkit-transform: translate(-25px, -80px) !important;
+          transform: translate(-25px, -80px) !important;
+  opacity: 0;
+}
+
+.down_ttl.is-active {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: translate(-25px, 0px) !important;
+          transform: translate(-25px, 0px) !important;
+  opacity: 1;
+}
+
+.left_ttl {
+  -webkit-transform: translate(-105px, 50px) !important;
+          transform: translate(-105px, 50px) !important;
+  opacity: 0;
+}
+
+.left_ttl.is-active {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translate(-25px, 0) !important;
+          transform: translate(-25px, 0) !important;
+  opacity: 1;
+}
+
+.right_ttl {
+  -webkit-transform: translate(55px, 50) !important;
+          transform: translate(55px, 50) !important;
+  opacity: 0;
+}
+
+.right_ttl.is-active {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translate(-25px, 0) !important;
+          transform: translate(-25px, 0) !important;
+  opacity: 1;
+}
+/*# sourceMappingURL=observer.css.map */

@@ -1,0 +1,137 @@
+// ハンバーガーメニュー
+.bl_hamburger_button,
+.bl_hamburger_button span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+    z-index: 20;
+    display: none;
+}
+.bl_hamburger_button {
+    position: relative;
+    width: 30px;
+    height: 24px;
+    background: none;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+}
+.bl_hamburger_button span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #333333;
+    border-radius: 4px;
+}
+.bl_hamburger_button .color_w {
+    background-color: #fff;
+}
+.bl_hamburger_button span:nth-of-type(1) {
+    top: 0;
+}
+.bl_hamburger_button span:nth-of-type(2) {
+    top: 10px;
+}
+.bl_hamburger_button span:nth-of-type(3) {
+    bottom: 0;
+}
+.bl_hamburger_button.js_hamburger_open span:nth-of-type(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+.bl_hamburger_button.js_hamburger_open span:nth-of-type(2) {
+    opacity: 0;
+} 
+.bl_hamburger_button.js_hamburger_open span:nth-of-type(3) {
+    transform: translateY(-10px) rotate(45deg);
+}
+    // スクロールすると色変わる
+.ly_header.headerColorScroll {
+    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 0.8s;
+}
+.bl_header_logo.headerColorScroll {
+    display: none;
+}
+.bl_header_logo-2 {
+    display: none;
+}
+.bl_header_logo-2.headerColorScroll {
+    display: block;
+}
+.bl_header_ttl.headerColorScroll a {
+    color: #333;
+}
+.bl_nav_menu_li.headerColorScroll a {
+    color: #333;
+}
+.bl_hamburger_button.headerColorScroll span {
+    background-color: #333333;
+}
+    // メニュー
+.bl_hamburger_menu {
+    width: 40%;
+    height: 100Vh;
+    background-color: $cBack;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    z-index: 15;
+}
+.bl_hamburger_menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: calc((100vh - 400px)/ 2) 0;
+    gap: 50px;
+}
+.bl_hamburger_menu-li:not(:last-child) {
+    margin-bottom: 50px;
+}
+.bl_hamburger_menu.js_hamburger_open {
+    transform: translateX(0);
+    opacity: 0.9;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.bl_hamburger_bg-w {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(251, 246, 246, 0.3);
+    z-index: 10;
+    visibility: hidden;
+}
+.bl_hamburger_bg-w.js_hamburger_open{
+    visibility: visible;
+}
+.bl_hamburger_menu_li a {
+    font-size: 3.2rem;
+    color: #333;
+}
+.js_hamburger_no_scroll {
+    overflow: hidden;
+}
+.bl_hamburger_button.js_hamburger_open span {
+    background-color: #333;
+}
+.color_B {
+    color: #333333;
+}
+.hp_font {
+    font-family: 'Cabin Sketch', cursive;
+}
+@media (max-width: 959px) {
+    .bl_hamburger_button,
+    .bl_hamburger_button span {
+        display: block;
+    }
+}
+@media (max-width: 599px) {
+
+}
