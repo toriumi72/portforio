@@ -96,3 +96,25 @@
         }
     }
 }
+
+// text animation 
+.text {
+    & > span {
+        opacity: 0;
+    }
+    &.is-active {
+        & > span {
+            opacity: 1;
+            @for $i from 1 through 160 {
+                &:nth-child(#{$i + 1}) {
+                    $delay: $i * 0.04 + s;
+                    transition-delay: $delay;
+                }
+            }
+        }
+    }
+}
+@keyframes text_anime {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

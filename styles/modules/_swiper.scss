@@ -62,17 +62,16 @@
 }
 @media (max-width: 959px) {
     .slider2 {
-        padding-bottom: 60px;
+        padding-bottom: 20%;
     }
     .swiper-pagination {
-        top: 97%;
+        top: 94%;
     }
-}
-@media (max-width: 959px) {
-    .swiper-pagination {
+    .span_960 {
         display: none;
     }
-    .slider2 {
+    .swiper-pagination {
         padding-bottom: 0px;
     }
 }
+

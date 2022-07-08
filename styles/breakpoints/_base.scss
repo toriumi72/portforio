@@ -766,6 +766,9 @@ body {
         &_menu {
             padding-left: 25px;
         }
+        &_ttl {
+            font-size: 2.2rem;
+        }
     }
 }
 // contact
@@ -891,9 +894,13 @@ input[type="checkbox"] {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+
     }
     .hp_nav_menu_li_footer {
         width: 26%;
+        & > a {
+            font-size: 2.0rem;
+        }
     }
     .bl_footer_img {
         padding-top: 150px;
@@ -919,4 +926,15 @@ input[type="checkbox"] {
             }
         }
     }
+}
+// font size
+
+.font_20px {
+    font-size: 2.0rem;
+}
+.font_18px {
+    font-size: 1.8rem;
+}
+.font_16px {
+    font-size: 1.6rem;
 }

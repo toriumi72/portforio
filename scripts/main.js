@@ -142,5 +142,14 @@ function callback(entries) {
   });
 };
 
+// text animation 
+const text = document.querySelector(".text")
+const wrap = text.textContent.split("");
+const trim = text.trim
 
-
+text.textContent = "";
+for (let a = 0; a < wrap.length; a++) {
+  let span = '<span>'+wrap[a]+'</span>';
+  text.insertAdjacentHTML("beforeend",span)
+  
+}
