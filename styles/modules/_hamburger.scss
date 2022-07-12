@@ -80,6 +80,7 @@
     transform: translateX(100%);
     opacity: 0;
     z-index: 15;
+    overflow-x: scroll;
 }
 .bl_hamburger_menu ul {
     display: flex;

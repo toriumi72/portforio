@@ -315,12 +315,25 @@ body {
             flex-basis: 30%;
             box-shadow: -30px -30px 0 #333;
             transform: rotate(-5deg);
+            animation: ky_about_back 0.5s both;
+            & > img {
+                &:hover {
+                    animation: ky_about_img 0.5s both;
+                }
+            }
+            
         }
         &_img-2 {
             height: 100%;
             flex-basis: 30%;
             box-shadow: 30px -30px 0 #333;
             transform: rotate(5deg);
+            animation: ky_about_back 0.5s both;
+            & > img {
+                &:hover {
+                    animation: ky_about_img 0.5s both;
+                }
+            }
         }
         &_box {
             display: flex;
@@ -365,6 +378,22 @@ body {
         flex-direction: row-reverse;
         gap: 60px;
         line-height: 2.3;
+    }
+}
+@keyframes ky_about_img {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+@keyframes ky_about_back {
+    0% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 .hp_img {
@@ -839,6 +868,30 @@ input[type="checkbox"] {
     height: 30px;
     display: inline-block;
 }
+input[type="submit"] {
+    animation:  ky_btn_back 0.5s both;
+    &:hover {
+        animation: ky_btn 0.5s both;
+    }
+    
+}
+@keyframes ky_btn {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+@keyframes ky_btn_back {
+    0% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
 .el_form_check {
     text-align: center;
 }
@@ -846,9 +899,17 @@ input[type="checkbox"] {
 .hp_form_btn {
     margin: 0 auto;
     font-size: 3.2rem;
-    line-height: 2;
     color: #333;
     cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 60px;
+    background-color: #fff;
+    line-height: 1.5;
+    box-shadow: 0px 3px 6px #333;
+    text-align: center;
+
 }
 @media (max-width: 599px) {
     .hp_form_btn {

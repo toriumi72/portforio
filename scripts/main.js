@@ -1,3 +1,5 @@
+window.addEventListener('DOMContentLoaded', (event) => {
+  
   // spのsafariにおける100vh表示の調整
   const setFillHeight = () => {
     const vh = window.innerHeight * 0.01;
@@ -153,3 +155,5 @@ for (let a = 0; a < wrap.length; a++) {
   text.insertAdjacentHTML("beforeend",span)
   
 }
+
+});

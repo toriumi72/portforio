@@ -1,83 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEKONOTE</title>
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <!-- vivus -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
-    <!-- scripts -->
-    <script defer src="scripts/swiper.js"></script>
-    <script defer src="scripts/vivus.js"></script>
-    <script defer src="scripts/main.js"></script>
-    <!-- css -->
-    <link rel="stylesheet" href="styles/destyle.css">
-    <link rel="stylesheet" href="styles/default.css">
-    <link rel="stylesheet" href="styles/vivus.css">
-    <link rel="stylesheet" href="styles/observer.css">
-    <link rel="stylesheet" href="styles/style.css">  
-</head>
-<body>
-    <div id="wrapper">
-        <div id="loading">
-            <div id="loadingWrap"></div>
-        </div>
-        <div id="js_scroll_fadein" class="js_scroll_fadein arrow"></div>
-        <header class="ly_header js_header">
-            <div class="ly_header_inner">
-                <h1 class="bl_header_logo js_header target up"><a href=""><img src="./images/logoW.png" alt="肉球のロゴ"></a></h1>
-                <h1 class="bl_header_logo-2 js_header"><a href=""><img src="./images/logoB.png" alt="肉球のロゴ"></a></h1>
-                <nav class="bl_nav hp_nav_header">
-                    <ul class="bl_nav_menu hp_animation">
-                        <li class="bl_nav_menu_li js_header target up"><a href="#works" alt="">works</a></li>
-                        <li class="bl_nav_menu_li js_header target up"><a href="#about" alt="">about</a></li>
-                        <li class="bl_nav_menu_li js_header target up"><a href="#service" alt="">service</a></li>
-                        <li class="bl_nav_menu_li js_header target up"><a href="#price" alt="">price</a></li>
-                        <li class="bl_nav_menu_li js_header target up"><a href="#contact" alt="">contact</a></li>
-                    </ul>
-                </nav>
-                <!-- ハンバーガーメニュー -->
-                <button  class="bl_hamburger_button bl_hamburger_button js_header target up">
-                    <span class="color_w"></span>
-                    <span class="color_w"></span>
-                    <span class="color_w"></span>
-                </button>
-            </div>
-            <div class="bl_hamburger_bg-w"></div>
-            <div class="bl_hamburger_menu">
-                <ul class="hp_animation">
-                    <h1 class="bl_hamburger_menu_li-logo js_header"><a href=""><img src="./images/logoB.png" alt="肉球のロゴ"></a></h1>
-                    <li class="bl_hamburger_menu_li hp_font"><a href="#works">works</a></li>
-                    <li class="bl_hamburger_menu_li hp_font"><a href="#about">about</a></li>
-                    <li class="bl_hamburger_menu_li hp_font"><a href="#service">service</a></li>
-                    <li class="bl_hamburger_menu_li hp_font"><a href="#price">price</a></li>
-                    <li class="bl_hamburger_menu_li hp_font"><a href="#contact">contact</a></li>
-                </ul>
-            </div>
-        </header>
+<?php get_header(); ?>
         <main class="ly_main">
             <section class="ly_fv">
                 <div class="swiper slider1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="slide-img"><img src="./images/top.jpg" alt=""></div>
+                            <div class="slide-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/top.jpg" alt=""></div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="slide-img"><img src="./images/top2.jpg" alt=""></div>
+                            <div class="slide-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/top2.jpg" alt=""></div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="slide-img"><img src="./images/top3.jpg" alt=""></div>
+                            <div class="slide-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/top3.jpg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -107,7 +40,7 @@
                         <div class="bl_intro_text target text">NEKONOTEでは、WEBサイトのコーディング作業を主に承っております。<br class="br_960">私は奇抜なアニメーションや、アッと驚かせるような機能が大好きです。<br class="br_960">しかし、お客様にとって一番大切なことは、「メンテナンスし易い」、<br class="br_960">「ページが崩れない」はもちろんのこと、お客さまひとりひとりのご要望を<br class="br_960">親身になってかなえていくことだと思っております。</div>
                         <a class="el_btn target up" href="#contact">contact</a>
                     </div>
-                    <div class="el_img target right-asiato"><img src="./images/asiato.png" alt=""></div>
+                    <div class="el_img target right-asiato"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/asiato.png" alt=""></div>
                 </div>
             </section>
             <section class="ly_works">
@@ -120,7 +53,7 @@
                               <!-- スライド -->
                               <div class="swiper-slide">
                                 <div class="bl_works_wrapper">
-                                    <div class="bl_works_img"><img src="./images/works1.jpg" alt=""></div>
+                                    <div class="bl_works_img"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/works1.jpg" alt=""></div>
                                     <div class="bl_works_text">
                                         <p class="bl_works_text_ttl">Engless</p>
                                         <p class="bl_works_text_description">WordPressを用いた企業サイトの構築例(user:toriumi,pass:Toriumi-72)。XDデザインよりコーディングを行っております(デザインは担当しておりません)。 Topの事例部分と料金部分はカスタムフィールドでクライアント様からも変更しやすくしており、 お知らせ部分はカスタム投稿タイプで対応しました。<span class="span_960">また、記事ページでは関連記事やおすすめ記事を実装しており、記事をSNSでも共有できるようにしております。 お問合せフォームでは自動返信メールの設定なども行っており、最後に公式テーマユニットテストデーターを用いて 動的処理による表示崩れがないか確認しております。</span></p>
@@ -130,7 +63,7 @@
                               </div>
                               <div class="swiper-slide">
                                 <div class="bl_works_wrapper">
-                                    <div class="bl_works_img"><img src="./images/works2.jpg" alt=""></div>
+                                    <div class="bl_works_img"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/works2.jpg" alt=""></div>
                                     <div class="bl_works_text">
                                         <p class="bl_works_text_ttl">石井花壇</p>
                                         <p class="bl_works_text_description">HTML、CSS、JavaScriptを用いた架空旅館サイトの構築例。XDデザインよりコーディングを行っております(デザインは担当していません)。下層ページ、cssアニメーション、JavaScriptをより実案件に近いであろう形で実装しました。レスポンシブにもこだわり、sp画面でも見やすいように意識しました。<span class="span_960">また、css設計にも少し考えるようにし、できるだけ再利用しやすいように、変更に強いようにと自分なりに考えて取り組みました。製作期間7日。</span></p>
@@ -140,7 +73,7 @@
                               </div>
                               <div class="swiper-slide">
                                 <div class="bl_works_wrapper">
-                                    <div class="bl_works_img"><img src="./images/works3.jpg" alt=""></div>
+                                    <div class="bl_works_img"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/works3.jpg" alt=""></div>
                                     <div class="bl_works_text">
                                         <p class="bl_works_text_ttl">ユアコーディング</p>
                                         <p class="bl_works_text_description">HTML、CSS、JQuery を用いたコーディング代行サイトの構築例。XDデザインよりコーディングを行っております(デザインは担当していません)。swiper、GoogleFormを用いた実装を行いました。製作期間3日。</p>
@@ -150,7 +83,7 @@
                               </div>
                               <div class="swiper-slide">
                                 <div class="bl_works_wrapper">
-                                    <div class="bl_works_img"><img src="./images/works3.jpg" alt=""></div>
+                                    <div class="bl_works_img"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/works3.jpg" alt=""></div>
                                     <div class="bl_works_text">
                                         <p class="bl_works_text_ttl">NEKONOTE</p>
                                         <p class="bl_works_text_description"></p>
@@ -172,18 +105,18 @@
                     <div class="ly_about_wrapper">
                         <ul class="bl_about_menu">
                             <li class="bl_about_li">
-                                <div class="bl_about_li_img target left_ttl"><img src="./images/about1.png" alt="かわいいネコの顔のアップ"></div>
+                                <div class="bl_about_li_img target left_ttl"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/about1.png" alt="かわいいネコの顔のアップ"></div>
                                 <div class="bl_about_li_box target right_ttl">
                                     <p class="bl_about_li_box_text">私を見つけてくださりありがとうございます!神奈川県在住、現在大学3年生の鳥海翔英と申します。WEB制作を仕事にし、どうにか学費を稼ぐため、楽しみながらスキルアップしています！吸収力ではだれにも負けません！猫が大好きなので、にゃん言語も学習中です。 </p>
                                     <div class="bl_about_li_box_sns">
-                                        <a href=""><img class="hp_img_sns" src="./images/Twitter.png" alt="Twitter"></a>
-                                        <a href=""><img class="hp_img_sns" src="./images/LINE.png" alt="Line"></a>
-                                        <a href=""><img class="hp_img_sns" src="./images/GitHub.png" alt="GitHub"></a>
+                                        <a href=""><img class="hp_img_sns" src="<?php echo get_stylesheet_directory_uri(); ?>./images/Twitter.png" alt="Twitter"></a>
+                                        <a href=""><img class="hp_img_sns" src="<?php echo get_stylesheet_directory_uri(); ?>./images/LINE.png" alt="Line"></a>
+                                        <a href=""><img class="hp_img_sns" src="<?php echo get_stylesheet_directory_uri(); ?>./images/GitHub.png" alt="GitHub"></a>
                                     </div>
                                 </div>
                             </li>
                             <li class="bl_about_li-2 hp_about_li">
-                                <div class="bl_about_li_img-2 target right_ttl"><img src="./images/about2.png" alt="かわいいネコの顔のおしり"></div>
+                                <div class="bl_about_li_img-2 target right_ttl"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/about2.png" alt="かわいいネコの顔のおしり"></div>
                                 <div class="bl_about_li_box-2 target left_ttl">
                                     <div class="bl_about_li_box_text-2">
                                         <div class="bl_about_li_box_text_wrapper">
@@ -207,26 +140,26 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="el_img hp_img target left-asiato"><img src="./images/asiato2.png" alt=""></div>
+                    <div class="el_img hp_img target left-asiato"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/asiato2.png" alt=""></div>
                 </div>
             </section>
             <section class="ly_possible">
                 <div class="ly_possible_inner ly_inner">
-                    <h3 id="servis" class="el_ttl target right_ttl">Service</h3>
+                    <h3 id="service" class="el_ttl target right_ttl">Service</h3>
                     <div class="ly_possible_wrapper">
                         <ul class="bl_possible_menu">
                             <li class="bl_possible_menu_li target up">
-                                <div class="bl_possible_menu_li_img"><img src="./images/possible.png" alt=""></div>
+                                <div class="bl_possible_menu_li_img"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/possible.png" alt=""></div>
                                 <div class="bl_possible_menu_li_ttl">HP・LP制作</div>
                                 <div class="bl_possible_menu_li_text font_16px">既存テーマによるサイト構築や静的HTMLサイトのWordPress化(オリジナルテーマ)を行います。コーポレートサイトや、個人ブログ等の制作も可能です。</div>
                             </li>
                             <li class="bl_possible_menu_li target up">
-                                <div class="bl_possible_menu_li_img"><img src="./images/possible2.png" alt=""></div>
+                                <div class="bl_possible_menu_li_img"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/possible2.png" alt=""></div>
                                 <div class="bl_possible_menu_li_ttl">HTML・CSSコーディング</div>
                                 <div class="bl_possible_menu_li_text font_16px">提供いただいたデザインを元に、保守性の高いコーディングをいたします。デザインの意図を汲み取り丁寧に実装いたします。Ai/Xd等のデータにて承ります。</div>
                             </li>
                             <li class="bl_possible_menu_li target up">
-                                <div class="bl_possible_menu_li_img"><img src="./images/possible3.png" alt=""></div>
+                                <div class="bl_possible_menu_li_img"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/possible3.png" alt=""></div>
                                 <div class="bl_possible_menu_li_ttl">サイト修正</div>
                                 <div class="bl_possible_menu_li_text font_16px">「住所、電話番号を変更したい…」、「この画像を変更したい…」などのお悩みはありませんか。お手持ちのWEBサイトを格安で修正いたします。</div>
                             </li>
@@ -344,7 +277,7 @@
                                         </ul>
                                         <p class="bl_price_item_rule_ttl">#デザインデータについて</p>
                                         <ul class="bl_price_item_rule_menu target right">
-                                            <li class="bl_price_item_rule_menu_li font_16px">提供されるデザインデータに関しましては、WEBデザインに最適化したデータのご提供をお願いいたします。<br>(カラー設定は「RGB」、サイズ設定は「px」、最大幅は「1920px」など)</li>
+                                            <li class="bl_price_item_rule_menu_li font_16px">提供されるデザインデータに関しましては、WEBデザインに適したデータのご提供をお願いいたします。<br>(カラー設定は「RGB」、サイズ設定は「px」、最大幅は「1920px」など)</li>
                                             <li class="bl_price_item_rule_menu_li font_16px">1ページの構築につき、少なくとも4営業日は必要になります。納品予定日の4日前までには構築予定ページのデザインデータをすべてご用意いただきますようお願いいたします。</li>
                                             <li class="bl_price_item_rule_menu_li font_16px">有料フォントをご利用の場合は、読み込みタグをご用意お願いいたします。</li>
                                             <li class="bl_price_item_rule_menu_li font_16px">デザインデータを受け取り次第、制作を開始いたします。<br>制作開始後の大幅なデザイン変更は、<span class="hp_span-red">別途料金が発生しますのでご了承下さい。</span></li>
@@ -359,42 +292,42 @@
                                     <div class="bl_price_item_flow">
                                         <ul class="bl_price_item_flow_menu">
                                             <li class="bl_price_item_flow_menu_li">
-                                                <div class="bl_price_item_flow_menu_li_img target left"><img src="./images/flow1.png" alt=""></div>
+                                                <div class="bl_price_item_flow_menu_li_img target left"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/flow1.png" alt=""></div>
                                                 <div class="bl_price_item_flow_menu_li_wrapper target right">
                                                     <p class="bl_price_item_flow_menu_li_ttl">①ヒアリング・お見積もり</p>
                                                     <div class="bl_price_item_flow_menu_li_text">→デザインデータについての確認。サイトの現在の状況・制作・修正後のイメージを詳細にお知らせください。</div>
                                                 </div>
                                             </li>
                                             <li class="bl_price_item_flow_menu_li">
-                                                <div class="bl_price_item_flow_menu_li_img target left"><img src="./images/flow2.png" alt=""></div>
+                                                <div class="bl_price_item_flow_menu_li_img target left"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/flow2.png" alt=""></div>
                                                 <div class="bl_price_item_flow_menu_li_wrapper target right">
                                                     <p class="bl_price_item_flow_menu_li_ttl">②契約</p>
                                                     <div class="bl_price_item_flow_menu_li_text font_16px">→ご依頼内容の詳細、デザインデータなどの確認後、お見積書を送付いたします。また、制作・修正作業に必要なFTP情報やWordPressのログイン情報のご共有が可能な場合はをお願いいたします。お見積書の内容に同意していただいたのち、制作・修正開始いたします。</div>
                                                 </div>
                                             </li>
                                             <li class="bl_price_item_flow_menu_li">
-                                                <div class="bl_price_item_flow_menu_li_img target left"><img src="./images/flow3.png" alt=""></div>
+                                                <div class="bl_price_item_flow_menu_li_img target left"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/flow3.png" alt=""></div>
                                                 <div class="bl_price_item_flow_menu_li_wrapper target right">
                                                     <p class="bl_price_item_flow_menu_li_ttl">③制作・修正作業開始</p>
                                                     <div class="bl_price_item_flow_menu_li_text font_16px">→お客様からいただいたデザインデータをもとに、コーディング作業を行っていきます。その際に、こまめに進捗報告を行い、お客様との認識にずれがないかを確認しながら進めていきます。</div>
                                                 </div>
                                             </li>
                                             <li class="bl_price_item_flow_menu_li">
-                                                <div class="bl_price_item_flow_menu_li_img target left"><img src="./images/flow4.png" alt=""></div>
+                                                <div class="bl_price_item_flow_menu_li_img target left"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/flow4.png" alt=""></div>
                                                 <div class="bl_price_item_flow_menu_li_wrapper target right">
                                                     <p class="bl_price_item_flow_menu_li_ttl">④ご確認・修正</p>
                                                     <div class="bl_price_item_flow_menu_li_text font_16px">→修正は1回まで無料で対応いたします。</div>
                                                 </div>
                                             </li>
                                             <li class="bl_price_item_flow_menu_li">
-                                                <div class="bl_price_item_flow_menu_li_img target left"><img src="./images/flow5.png" alt=""></div>
+                                                <div class="bl_price_item_flow_menu_li_img target left"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/flow5.png" alt=""></div>
                                                 <div class="bl_price_item_flow_menu_li_wrapper target right">
                                                     <p class="bl_price_item_flow_menu_li_ttl">➄最終確認</p>
                                                     <div class="bl_price_item_flow_menu_li_text font_16px">→全ページの修正、制作が完了しましたら、最終チェックを行います。最終チェックが終わりましたら、納品・公開処理に入ります。</div>
                                                 </div>
                                             </li>
                                             <li class="bl_price_item_flow_menu_li">
-                                                <div class="bl_price_item_flow_menu_li_img target left"><img src="./images/flow6.png" alt=""></div>
+                                                <div class="bl_price_item_flow_menu_li_img target left"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/flow6.png" alt=""></div>
                                                 <div class="bl_price_item_flow_menu_li_wrapper target right">
                                                     <p class="bl_price_item_flow_menu_li_ttl">⑥納品</p>
                                                     <div class="bl_price_item_flow_menu_li_text">→FTP情報をいただけない場合<br>・WordPressのテーマやHTML/CSS/JSを入れたZIPファイルをお渡しし、納品とさせていただきます。</div>
@@ -444,7 +377,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="el_img target right-asiato"><img src="./images/asiato.png" alt=""></div>
+                    <div class="el_img target right-asiato"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/asiato.png" alt=""></div>
                 </div>
             </section>
             <section class="ly_contact">
@@ -454,57 +387,17 @@
                         <div class="bl_contact_text">
                             <p class="bl_contact_text_ttl font_18px target up">コーディングのご依頼は、お問い合わせフォーム、 <br class="br_960">または下記のSNSよりご都合の良いものからご連絡ください。</p>
                             <div class="bl_contact_text_li target right">
-                                <p class="bl_contact_text_li_item">・注意事項に同意の上、お問い合わせください</p>
-                                <p class="bl_contact_text_li_item">・</p>
+                                <p class="bl_contact_text_li_item">・注意事項に同意の上、お問い合わせください。</p>
+                                <p class="bl_contact_text_li_item">・送信完了メールのご確認をお願い致します。</p>
                             </div>
                         </div>
-                        <form class="el_form" id="form" action="" name="contact-form"> 
-                            <div class="el_form_wrapper">
-                                <label class="el_form_ttl target left">お名前</label>
-                                <input class="target right" type="text" id="name" name=""  placeholder="neko note">
-                            </div>
-                            <div class="el_form_wrapper">
-                                <label class="el_form_ttl target left">メールアドレス</label>
-                                <input class="target right" type="email" id="mail" name="" placeholder="nekonote@gmail.com">
-                            </div>
-                            <div class="el_form_wrapper">
-                                <label class="el_form_ttl target left">お問い合わせ項目</label>
-                                <select class="target right" type="select" class="" name="" id="" placeholder="お問い合わせ項目を選択してください。" required>
-                                    <option value="">お問い合わせ項目を選択してください。</option>
-                                    <option value="①">制作依頼</option>
-                                    <option value="②">業務委託</option>
-                                    <option value="③">ネコについて</option>
-                                </select>
-                            </div>
-                            <div class="el_form_wrapper">
-                                <label class="el_form_ttl target left">メールアドレス</label>
-                                <textarea class="target right" name="" id="text" placeholder="お問い合わせ内容を入力してください。"></textarea>
-                            </div>
-                            <label class="el_form_check target up"><input type="checkbox"><a href="">こちら</a>の注意事項に同意の上、送信してください。</label>
-                            <div class="el_btn hp_form_btn target up"><input type="submit" id="js_submit" value="送信する" disabled></div>
-                        </form>
+                        <?php the_content(); ?>
                         <div class="bl_contact_sns">
-                            <a href=""><img class="hp_img_sns target up" src="./images/Twitter.png" alt=""></a>
-                            <a href=""><img class="hp_img_sns target up" src="./images/LINE.png" alt=""></a>
+                            <a href=""><img class="hp_img_sns target up" src="<?php echo get_stylesheet_directory_uri(); ?>./images/Twitter.png" alt=""></a>
+                            <a href=""><img class="hp_img_sns target up" src="<?php echo get_stylesheet_directory_uri(); ?>./images/LINE.png" alt=""></a>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="ly_footer">
-            <div class="ly_footer_inner ly_inner">
-                <nav class="bl_nav hp_nav_footer">
-                    <ul class="bl_nav_menu hp_nav_menu_footer hp_animation">
-                        <li class="bl_nav_menu_li hp_nav_menu_li_footer target up"><a class="hp_cB" href="#works">works</a></li>
-                        <li class="bl_nav_menu_li hp_nav_menu_li_footer target up"><a class="hp_cB" href="#about">about</a></li>
-                        <li class="bl_nav_menu_li hp_nav_menu_li_footer target up"><a class="hp_cB" href="#price">price</a></li>
-                        <li class="bl_nav_menu_li hp_nav_menu_li_footer target up"><a class="hp_cB" href="#contact">contact</a></li>
-                    </ul>
-                </nav>
-                <figure class="bl_footer_img target up"><img src="./images/Nekonote.png" alt=""></figure>
-                <p class="bl_copy target up"><small>&copy;NEKONOTE All Rights Reserved.</small></p>
-            </div>
-        </footer>
-    </div>
-</body>
-</html>
+    <?php get_footer();
