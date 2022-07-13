@@ -768,6 +768,16 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .hp_nav_header {
+    display: none;
+  }
+  .bl_header_logo > img {
+    width: 40px;
+    height: auto;
+  }
+}
+
 .ly_fv {
   position: relative;
   height: 100vh;
@@ -1782,6 +1792,7 @@ textarea {
 input[type="checkbox"] {
   height: 30px;
   display: inline-block;
+  border: 1px solid #333;
 }
 
 input[type="submit"] {
@@ -1963,6 +1974,10 @@ input[type="submit"]:hover {
 
 .font_16px {
   font-size: 1.6rem;
+}
+
+.mw_wp_form_complete {
+  padding-top: 30px;
 }
 
 .hp_span-red {

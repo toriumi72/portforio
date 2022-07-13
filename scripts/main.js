@@ -17,27 +17,25 @@ window.onload = function() {
 }
 
 // tab
-document.addEventListener('DOMContentLoaded',() => {
-    const tabTriggers = document.querySelectorAll('.js_tab_trigger');
-    const tabTargets = document.querySelectorAll('.js_tab_target');
+const tabTriggers = document.querySelectorAll('.js_tab_trigger');
+const tabTargets = document.querySelectorAll('.js_tab_target');
 
-    tabTriggers.forEach(tabTrigger => {
-        tabTrigger.addEventListener('click', (e) => {
-           let currentMenu = e.currentTarget;
-           let currentContent = document.getElementById(currentMenu.dataset.id)
-           tabTriggers.forEach(tabTrigger => {
-            tabTrigger.classList.remove('is_active')
-           });
-           currentMenu.classList.add('is_active')
+tabTriggers.forEach(tabTrigger => {
+    tabTrigger.addEventListener('click', (e) => {
+        let currentMenu = e.currentTarget;
+        let currentContent = document.getElementById(currentMenu.dataset.id)
+        tabTriggers.forEach(tabTrigger => {
+        tabTrigger.classList.remove('is_active')
+        });
+        currentMenu.classList.add('is_active')
 
-           tabTargets.forEach(tabTarget => {
-            tabTarget.classList.remove('is_active')
-           });
-           if(currentContent !== null) {
-            currentContent.classList.add('is_active')
-           }
-        })
-    });
+        tabTargets.forEach(tabTarget => {
+        tabTarget.classList.remove('is_active')
+        });
+        if(currentContent !== null) {
+        currentContent.classList.add('is_active')
+        }
+    })
 });
 
 // ハンバーガー

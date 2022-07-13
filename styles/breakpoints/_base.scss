@@ -138,6 +138,18 @@ body {
         display: none;
     }
 }
+@media (max-width: 600px) {
+    .hp_nav_header {
+        display: none;
+    }
+    .bl_header_logo {
+        & > img {
+            width: 40px;
+            height: auto;
+        }
+
+    }
+}
 
 // main
 // fv
@@ -867,6 +879,7 @@ textarea {
 input[type="checkbox"] {
     height: 30px;
     display: inline-block;
+    border: 1px solid #333;
 }
 input[type="submit"] {
     animation:  ky_btn_back 0.5s both;
@@ -998,4 +1011,9 @@ input[type="submit"] {
 }
 .font_16px {
     font-size: 1.6rem;
+}
+
+// wp 
+.mw_wp_form_complete {
+    padding-top: 30px;
 }

@@ -8,7 +8,7 @@
                         <li class="bl_nav_menu_li hp_nav_menu_li_footer target up"><a class="hp_cB" href="#price">price</a></li>
                     </ul>
                 </nav>
-                <figure class="bl_footer_img target up"><img src="<?php echo get_stylesheet_directory_uri(); ?>./images/Nekonote.png" alt=""></figure>
+                <figure class="bl_footer_img target up"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Nekonote.png" alt=""></figure>
                 <p class="bl_copy target up"><small>&copy;NEKONOTE All Rights Reserved.</small></p>
             </div>
         </footer>
