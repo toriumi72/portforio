@@ -4,7 +4,7 @@
                 <div class="swiper slider1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="slide-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top.jpg" alt=""></div>
+                            <div class="slide-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top1.jpg" alt=""></div>
                         </div>
                         <div class="swiper-slide">
                             <div class="slide-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top2.jpg" alt=""></div>
@@ -126,6 +126,7 @@
                                             <div class="bl_about_li_box_text_li">
                                                 <p class="bl_about_li_box_text_li_item">・Windows10</p>
                                                 <p class="bl_about_li_box_text_li_item">・VScode/Adobe XD</p>
+                                                <p class="bl_about_li_box_text_li_item">・Git</p>
                                             </div>
                                         </div>
                                     </div>

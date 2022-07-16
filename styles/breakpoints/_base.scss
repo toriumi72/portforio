@@ -961,25 +961,28 @@ input[type="submit"] {
     .bl_footer_img {
         width: 200px;
         margin: 0 auto;
-        padding-top: 60px;
+        padding-top: 0px;
+        margin-top: 120px;
+        transform: translateX(10px);
     }
+    .hp_nav_footer {
+        margin-bottom: 30px;
+    }
+
     .hp_nav_menu_footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-
+        
     }
     .hp_nav_menu_li_footer {
         width: 26%;
         & > a {
-            font-size: 2.0rem;
+            font-size: 2.2rem;
         }
     }
-    .bl_footer_img {
-        padding-top: 150px;
-        transform: translateX(20px);
-    }
+
     .bl_599 {
         display: none;
     }

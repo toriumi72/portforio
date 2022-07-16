@@ -15,7 +15,7 @@ const swiper2 = new Swiper('.slider2', {
     // Optional parameters
     loop: true,
     autoplay: {
-        delay: 10000
+        delay: 15000
     },
 
     pagination: {
